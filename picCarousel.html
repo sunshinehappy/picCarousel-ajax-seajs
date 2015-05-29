@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>picCarousel</title> 
+    <style type="text/css"> 
+    img{ border:0; } 
+    #picPlay { position:relative; width:1200px; height:400px; overflow:hidden; border:solid 1px #ccc; margin:0 auto;" }
+	</style>  
+</head> 
+
+<body> 
+
+    <div id="picPlay"> 
+        
+    </div> 
+
+</body> 
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/sea.js"></script>
+<script>
+	//seajs简单配置
+	seajs.config({
+  		base: "../sea-modules/",
+  		alias: {
+    		"jquery": "js/jquery.min.js"
+  		}
+	})
+	//加载入口模块
+	seajs.use('./js/doPlay.js');
+
+</script>
+
+</html>
